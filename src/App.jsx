@@ -1,3 +1,4 @@
+import GoogleLogin from "./components/GoogleLogin";
 /**
   * Componente principal de la aplicación.
   *
@@ -18,9 +19,12 @@
   */
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="text-3xl font-bold underline space-y-4">
+      <h2>Hello world!!!! This is a test to check website in firebase</h2>
+
+      <p>My Firebase Terra</p>
+      <GoogleLogin />
+    </div>
   )
 };
 
