@@ -21,9 +21,9 @@ import CloudFunction from "./components/CloudFunction";
 const App = () => {
   return (
     <div className="text-3xl font-bold underline space-y-4">
-      <h2>Hello world!!!! This is a test to check website in firebase</h2>
+      <h2>Hello world! This is a test to check website in firebase</h2>
 
-      <p>My Firebase Terra</p>
+      <p>My Firebase Terra 2026</p>
       <GoogleLogin />
 
       <CloudFunction />
