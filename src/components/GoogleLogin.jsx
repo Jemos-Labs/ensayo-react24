@@ -10,11 +10,17 @@ import { db } from "../firebase";
 import { auth } from "../firebase";
 import LoginButton from "./LoginButton";
 import { doc, setDoc } from "firebase/firestore";
+import { storage } from "../firebase";
+import {
+  ref,
+  uploadBytes,
+} from "firebase/storage";
 
 export default function GoogleLogin() {
   
   const [user, setUser] = useState(null);
-  
+  const [file, setFile] = useState(null);
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(
       auth,
@@ -63,6 +69,23 @@ export default function GoogleLogin() {
     }
   }
 
+  async function uploadFile() {
+    if (!file) return;
+
+    try {
+      const storageRef = ref(
+        storage,
+        `uploads/${user.uid}/${file.name}`
+      );
+
+      await uploadBytes(storageRef, file);
+
+      console.log("Archivo subido");
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <div>
       {!user ? (
@@ -74,6 +97,17 @@ export default function GoogleLogin() {
           <p>{user.displayName}</p>
 
           <p>{user.email}</p>
+
+          <input
+            type="file"
+            onChange={(e) =>
+              setFile(e.target.files[0])
+            }
+          />
+
+          <button onClick={uploadFile}>
+            Subir archivo
+          </button>
 
           <button onClick={logout}>
             Cerrar sesión

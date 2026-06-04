@@ -1,4 +1,5 @@
 import GoogleLogin from "./components/GoogleLogin";
+import CloudFunction from "./components/CloudFunction";
 /**
   * Componente principal de la aplicación.
   *
@@ -24,6 +25,8 @@ const App = () => {
 
       <p>My Firebase Terra</p>
       <GoogleLogin />
+
+      <CloudFunction />
     </div>
   )
 };
