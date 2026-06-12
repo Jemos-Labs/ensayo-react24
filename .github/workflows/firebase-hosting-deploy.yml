@@ -5,6 +5,10 @@ on:
     branches:
       - develop
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   deploy:
     uses: Jemos-Labs/actions-jemoslabs/.github/workflows/firebase-hosting-deploy.yml@main
