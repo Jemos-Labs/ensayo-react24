@@ -15,4 +15,7 @@ jobs:
     
     with:
       firebase_project: ${{ vars.FIREBASE_PROJECT }}
-
+      
+    secrets:
+      WIF_PROVIDER: ${{ secrets.WIF_PROVIDER }}
+      GCP_SERVICE_ACCOUNT: ${{ secrets.GCP_SERVICE_ACCOUNT }}
