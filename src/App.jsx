@@ -23,7 +23,7 @@ const App = () => {
     <div className="text-3xl font-bold underline space-y-4">
       <h2>Hello world!! This is a website in firebase</h2>
 
-      <p>My ReactJS + Actions + Firebase + Terra 2026</p>
+      <p>My ReactJS + Actions + Firebase + Terra 2026 El workflow quedo actualizado!</p>
       <GoogleLogin />
 
       <CloudFunction />
