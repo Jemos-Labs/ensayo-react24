@@ -12,6 +12,7 @@ permissions:
 jobs:
   deploy:
     uses: Jemos-Labs/actions-jemoslabs/.github/workflows/firebase-hosting-deploy.yml@main
+    
     with:
       firebase_project: ${{ vars.FIREBASE_PROJECT }}
-    secrets: inherit
+
