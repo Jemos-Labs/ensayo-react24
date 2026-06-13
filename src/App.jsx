@@ -21,7 +21,7 @@ import CloudFunction from "./components/CloudFunction";
 const App = () => {
   return (
     <div className="text-3xl font-bold underline space-y-4">
-      <h2>Hello world!! This is a website in firebase Host</h2>
+      <h2>Hello world!! This is a website in firebase Hosting</h2>
 
       <p>My ReactJS + Actions + Firebase + Terra 2026 El workflow quedo actualizado con permisos WIF + SA and repo app without interactive!!</p>
       <GoogleLogin />
