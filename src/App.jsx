@@ -23,7 +23,7 @@ const App = () => {
     <div className="text-3xl font-bold underline space-y-4">
       <h2>This is a website firebase Hosting resource</h2>
 
-      <p>My ReactJS + Actions + Firebase + Terra 2026 El workflow quedo actualizado con permisos WIF + SA and repo app without interactive!!</p>
+      <p>ReactJS + Actions + Firebase 2026 El workflow quedo actualizado con permisos WIF + SA and repo app without interactive!!</p>
       <GoogleLogin />
 
       <CloudFunction />
