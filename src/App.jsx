@@ -23,7 +23,7 @@ const App = () => {
     <div className="text-3xl font-bold underline space-y-4">
       <h2>This is a website firebase Hosting resource</h2>
 
-      <p>ReactJS + Actions + Firebase 2026 workflow dispatch + Workload Identity Federation + Service Account and repo app without interactive!!</p>
+      <p>ReactJS & Firebase Hosting 2026</p>
       <GoogleLogin />
 
       <CloudFunction />
