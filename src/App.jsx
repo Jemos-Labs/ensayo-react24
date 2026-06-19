@@ -21,9 +21,9 @@ import CloudFunction from "./components/CloudFunction";
 const App = () => {
   return (
     <div className="text-3xl font-bold underline space-y-4">
-      <h2>This is a website firebase Hosting resource</h2>
+      <h2>This is a website with firebase Hosting resource</h2>
 
-      <p>ReactJS in Actions & Firebase Hosting 2026</p>
+      <p>Vite + ReactJS + Actions + GCP + Firebase Hosting in 2026</p>
       <GoogleLogin />
 
       <CloudFunction />
